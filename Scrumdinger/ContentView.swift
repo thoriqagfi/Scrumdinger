@@ -10,10 +10,34 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            ProgressView(value: 5, total: 15)
+            HStack(content: {
+                VStack(content: {
+                    Text("Second Elapsed")
+                        .font(.caption)
+                    Label("300", systemImage: "hourglass.tophalf.fill")
+                })
+                Spacer()
+                VStack(content: {
+                    Text("Second Remaining")
+                        .font(.caption)
+                    Label("1500", systemImage: "hourglass.bottomhalf.fill")
+                })
+            })
+            .accessibilityElement(children: /*@START_MENU_TOKEN@*/.ignore/*@END_MENU_TOKEN@*/)
+            .accessibilityLabel("Time Remaining")
+            .accessibilityValue("10 Minutes")
+            
+            Circle()
+                .strokeBorder(style: StrokeStyle(lineWidth: 24))
+            HStack(content: {
+                Text("Speaker 1 of 3")
+                Spacer()
+                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                    Image(systemName: "forward.fill")
+                })
+                .accessibilityLabel("Next Spekaer")
+            })
         }
         .padding()
     }
