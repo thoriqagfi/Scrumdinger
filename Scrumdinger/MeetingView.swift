@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct MeetingView: View {
     var body: some View {
         VStack {
             ProgressView(value: 5, total: 15)
@@ -24,7 +24,7 @@ struct ContentView: View {
                     Label("1500", systemImage: "hourglass.bottomhalf.fill")
                 })
             })
-            .accessibilityElement(children: /*@START_MENU_TOKEN@*/.ignore/*@END_MENU_TOKEN@*/)
+            .accessibilityElement(children: .ignore)
             .accessibilityLabel("Time Remaining")
             .accessibilityValue("10 Minutes")
             
@@ -44,5 +44,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    MeetingView()
 }
