@@ -21,6 +21,7 @@
 		D0BBE5832BB541CD002C9766 /* DailyScrum.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BBE5822BB541CD002C9766 /* DailyScrum.swift */; };
 		D0BBE5852BB54949002C9766 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BBE5842BB54949002C9766 /* CardView.swift */; };
 		D0D5E1FC2BCD725700211933 /* ThemeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D5E1FB2BCD725700211933 /* ThemeView.swift */; };
+		D0D5E1FE2BCD7A0500211933 /* ThemePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D5E1FD2BCD7A0500211933 /* ThemePicker.swift */; };
 		D0E8B1702BC2E1B700CEE88D /* TrailingIconLabelStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E8B16F2BC2E1B700CEE88D /* TrailingIconLabelStyle.swift */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +60,7 @@
 		D0BBE5822BB541CD002C9766 /* DailyScrum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyScrum.swift; sourceTree = "<group>"; };
 		D0BBE5842BB54949002C9766 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		D0D5E1FB2BCD725700211933 /* ThemeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeView.swift; sourceTree = "<group>"; };
+		D0D5E1FD2BCD7A0500211933 /* ThemePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemePicker.swift; sourceTree = "<group>"; };
 		D0E8B16F2BC2E1B700CEE88D /* TrailingIconLabelStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailingIconLabelStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -163,6 +165,7 @@
 				D0B0BE272BCD334000B4AA95 /* DetailEditView.swift */,
 				D0BBE5572BB52A14002C9766 /* MeetingView.swift */,
 				D0D5E1FB2BCD725700211933 /* ThemeView.swift */,
+				D0D5E1FD2BCD7A0500211933 /* ThemePicker.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -301,6 +304,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0D5E1FE2BCD7A0500211933 /* ThemePicker.swift in Sources */,
 				D0BBE5832BB541CD002C9766 /* DailyScrum.swift in Sources */,
 				D093D5CD2BC5C9BF0000E8D4 /* DetailView.swift in Sources */,
 				D0B0BE282BCD334000B4AA95 /* DetailEditView.swift in Sources */,
