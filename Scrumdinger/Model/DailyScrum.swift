@@ -66,6 +66,6 @@ extension DailyScrum {
             title: "App Dev",
             attendees: ["Chella", "Chris", "Christians", "Eden", "Karla", "Lindsey", "Aga", "Chad", "Jenn", "Sarah",],
             lengthMinutes: 5,
-            theme: .poppy)
+            theme: .indigo)
     ]
 }
