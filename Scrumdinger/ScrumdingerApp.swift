@@ -13,6 +13,7 @@ struct ScrumdingerApp: App {
         WindowGroup {
 //            MeetingView()
             ScrumsView(scrums: .constant(DailyScrum.sampleData))
+//            LoginView()
         }
     }
 }

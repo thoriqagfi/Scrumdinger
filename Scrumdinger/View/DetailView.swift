@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import AuthenticationServices
 
 struct DetailView: View {
     @Binding var scrum: DailyScrum
@@ -44,6 +45,21 @@ struct DetailView: View {
                     attendee in
                     Label(attendee.name, systemImage: "person")
                 })
+            })
+            
+            Section("History", content: {
+                if scrum.history.isEmpty {
+                    Label(
+                        title: { Text("No Meetings Yet") },
+                        icon: { Image(systemName: "calendar.badge.exclamationmark") }
+                    )
+                }
+                ForEach(scrum.history) { history in
+                    HStack(content: {
+                        Image(systemName: "calendar")
+                        Text(history.date, style: .date)
+                    })
+                }
             })
         })
         .navigationTitle(scrum.title)
