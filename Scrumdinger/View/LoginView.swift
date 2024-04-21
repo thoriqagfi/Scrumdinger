@@ -18,9 +18,9 @@ struct LoginView: View {
                 request.requestedScopes = [.email, .fullName]
             }, onCompletion: { result in
                 switch result {
-                case .success(let authResults):
+                case .success(_):
                     print("Auth success")
-                case .failure(let error):
+                case .failure(_):
                     print("Auth Failed!")
                 }
             })
